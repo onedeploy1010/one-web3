@@ -2,7 +2,8 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useRef, useEffect } from 'react'
-import { FaBook, FaChevronRight, FaExpand, FaCompress } from 'react-icons/fa'
+import { FaBook, FaChevronRight, FaExpand, FaCompress, FaFileAlt } from 'react-icons/fa'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 
 export default function WhitepaperPage() {
   const [activeSection, setActiveSection] = useState<string>('abstract')
@@ -1023,6 +1024,15 @@ ONE (稳定) ⇄ AIDA (算力) → ANFT (智能体) → PFW (劳动) → ONE (�
 
   return (
     <main className="min-h-screen pt-32 pb-20 bg-black">
+      {/* Breadcrumb Navigation */}
+      <div className="container mx-auto px-4 mb-8">
+        <Breadcrumb
+          items={[
+            { label: '白皮书', icon: <FaFileAlt /> }
+          ]}
+        />
+      </div>
+
       {/* Hero Section */}
       <section className="container mx-auto px-4 mb-16">
         <motion.div

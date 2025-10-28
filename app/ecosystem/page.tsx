@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { FaLayerGroup, FaRobot, FaTasks, FaIndustry, FaCoins, FaWallet, FaChartLine, FaNetworkWired } from 'react-icons/fa'
+import { FaLayerGroup, FaRobot, FaTasks, FaIndustry, FaCoins, FaWallet, FaChartLine, FaNetworkWired, FaCubes } from 'react-icons/fa'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 
 export default function EcosystemPage() {
   const [selectedLayer, setSelectedLayer] = useState<number | null>(null)
@@ -182,6 +183,15 @@ export default function EcosystemPage() {
 
   return (
     <main className="min-h-screen pt-32 pb-20 bg-black">
+      {/* Breadcrumb Navigation */}
+      <div className="container mx-auto px-4 mb-8">
+        <Breadcrumb
+          items={[
+            { label: '生态架构', icon: <FaCubes /> }
+          ]}
+        />
+      </div>
+
       {/* Hero Section */}
       <section className="container mx-auto px-4 mb-16">
         <motion.div
