@@ -9,22 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // 墨蓝偏绿色系 - ONE集团主色调
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: '#e6f7f9',
+          100: '#cceff3',
+          200: '#99dfe7',
+          300: '#66cfdb',
+          400: '#33bfcf',
+          500: '#0d8a9d',  // 主色：墨蓝偏绿
+          600: '#0a6e7e',
+          700: '#08535f',
+          800: '#053740',
+          900: '#031c20',
         },
         accent: {
-          purple: '#a855f7',
-          cyan: '#06b6d4',
-          pink: '#ec4899',
+          teal: '#14b8a6',      // 青绿色
+          cyan: '#06b6d4',      // 青色
+          emerald: '#10b981',   // 翠绿色
+          gold: '#f59e0b',      // 金色点缀
         }
       },
       backgroundImage: {
@@ -42,10 +44,10 @@ const config: Config = {
         },
         glow: {
           'from': {
-            boxShadow: '0 0 20px rgba(14, 165, 233, 0.5), 0 0 40px rgba(168, 85, 247, 0.3)',
+            boxShadow: '0 0 20px rgba(13, 138, 157, 0.5), 0 0 40px rgba(20, 184, 166, 0.3)',
           },
           'to': {
-            boxShadow: '0 0 30px rgba(14, 165, 233, 0.8), 0 0 60px rgba(168, 85, 247, 0.6)',
+            boxShadow: '0 0 30px rgba(13, 138, 157, 0.8), 0 0 60px rgba(20, 184, 166, 0.6)',
           },
         },
       },
