@@ -43,7 +43,7 @@ export default function Header() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'glass-strong shadow-2xl py-3 md:py-4' : 'bg-transparent py-4 md:py-6'
+          isScrolled ? 'glass-strong border-b border-primary-500/20 shadow-glow-md py-3 md:py-4' : 'bg-transparent py-4 md:py-6'
         }`}
       >
         <div className="container-responsive">
@@ -70,10 +70,10 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="text-gray-300 hover:text-white transition-colors relative group font-medium"
+                    className="text-gray-300 hover:text-white transition-colors relative group font-semibold font-display"
                   >
                     {item.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all group-hover:w-full" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-secondary-500 transition-all group-hover:w-full" />
                   </Link>
                 </motion.div>
               ))}
@@ -88,7 +88,7 @@ export default function Header() {
             >
               <Link
                 href="/whitepaper"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2.5 rounded-full text-sm font-bold hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+                className="bg-gradient-to-r from-primary-500 to-secondary-500 px-6 py-2.5 rounded-full text-sm font-bold hover-lift hover-glow transition-all font-display shadow-glow-sm"
               >
                 查看白皮书
               </Link>
